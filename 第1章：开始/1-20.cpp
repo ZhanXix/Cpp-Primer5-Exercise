@@ -1,4 +1,4 @@
-/*说明：Sales_item.h以及相关输入输出文件已在1.20文件夹中*/
+/*说明：Sales_item.h以及相关输入输出文件已在Sales_item文件夹中*/
 
 #include <iostream>
 #include "Sales_item.h"	
