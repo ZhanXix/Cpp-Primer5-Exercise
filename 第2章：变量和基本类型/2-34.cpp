@@ -10,18 +10,18 @@ int main()
 	auto d=&i;
 	auto e=&ci;
 	auto &g=ci;
-	a=42;	//合法。a是一个整数，被赋值为42 
+	a=42;	//合法。 
 	cout<<"a="<<a<<endl; 
-	b=42;	//合法。b是一个整数，被赋值为42
+	b=42;	//合法。
 	cout<<"b="<<b<<endl;
-	c=42;	//合法。c是一个整数，被赋值为42
+	c=42;	//合法。
 	cout<<"c="<<c<<endl;
-	/*
-	d=42;	//不合法。d是一个整型指针，不能赋值为整数 
+	/*上一题的推断正确
+	d=42;	//[Error] invalid conversion from 'int' to 'int*' [-fpermissive]
 	cout<<"d="<<d<<endl;
-	e=42;	//不合法。e是一个指向整数常量的指针，不能赋值为整数 
+	e=42;	// [Error] invalid conversion from 'int' to 'const int*' [-fpermissive]
 	cout<<"e="<<e<<endl;
-	g=42;	// 不合法。g是一个整型常量引用，不能改变其值
+	g=42;	// [Error] assignment of read-only reference 'g'	
 	cout<<"g="<<g<<endl;
 	*/
 	return 0;          
