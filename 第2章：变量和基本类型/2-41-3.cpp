@@ -18,7 +18,7 @@ int main(){
 		cin>>book.count>>book.money;	//读入余下多条销售记录
 		int flag=add_sales(allBook,book);//将每条销售记录与初始记录相加 
 		if(flag!=0){	
-			cout<<"Error! You should put data with the same ISBN"<<endl; 
+			cerr<<"Error! You should put data with the same ISBN"<<endl; 
 			return -1;					//若出错，则报错 
 		} 
 	}//while 
@@ -42,8 +42,7 @@ int add_sales(Sales_data &book1,Sales_data book2){
 int  print_sales(Sales_data book){
 /*读取书籍销售记录,将记录打印到标准输出上*/
 	double all_money=0;	//总销售额 
-	cin>>book.ISBN>>book.count>>book.money;
 	all_money=book.count*book.money; 
 	cout<<book.ISBN<<" "<<book.count<<" "<<all_money<<" "<<book.money<<endl;
 	return 0;
-} 
+}
