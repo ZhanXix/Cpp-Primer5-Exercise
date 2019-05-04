@@ -15,11 +15,10 @@ int main(){
 	//比较两个string对象  	
 	if(s1>s2)
 		cout << "string1 大于 string2 " << endl;
-    else if(s1<s2)
+	else if(s1<s2)
 		cout << "string1 小于 string2 " << endl;	
 	else 
 		cout << "string1 与 string2 相等" << endl;
 	return 0; 
-   
 }
 
