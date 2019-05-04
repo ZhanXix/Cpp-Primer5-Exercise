@@ -26,11 +26,10 @@ int main(){
 	int flag = strcmp(s1,s2);
 	if(flag>0)
 		cout << "字符串1 大于 字符串2 " << endl;
-    else if(flag<0)
+	else if(flag<0)
 		cout << "字符串1 小于 字符串2 " << endl;	
 	else 
 		cout << "字符串1 与 字符串2 相等" << endl;
 	return 0; 
-   
 }
 
