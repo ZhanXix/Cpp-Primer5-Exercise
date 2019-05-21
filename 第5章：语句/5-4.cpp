@@ -1,6 +1,5 @@
 //可读性降低了
 #include <iostream>
-using namespace std;
 int main() {
 	int sum = 0, val = 1;
 	//只要val的值小于等于10，while循环就会持续执行
