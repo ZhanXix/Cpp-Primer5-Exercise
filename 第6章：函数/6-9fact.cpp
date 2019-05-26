@@ -7,4 +7,3 @@ int fact(int val)	//阶乘
 		ret *= val;
 	return ret;
 }
-//6.9
